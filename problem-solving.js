@@ -47,7 +47,9 @@ function deleteInvalids(array) {
 
 // -----------------problem number four---------------------
 
-
+function password(obj) {
+    
+    }
 
 
 
