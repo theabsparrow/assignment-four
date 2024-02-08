@@ -10,6 +10,6 @@ function checkName(name) {
         return "Bad Name";
     }
     }
-    const theName = "Tonoy";
+    const theName = "123";
     const result = checkName(theName);
     console.log(result);
