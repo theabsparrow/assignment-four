@@ -3,6 +3,11 @@ function monthlySavings(arr , livingCost) {
     if (!Array.isArray(arr) || typeof livingCost !== "number" || isNaN(livingCost)){
         return "input invalid";
     }
+    for (let i = 0; i < arr.length; i++){
+        if (typeof arr[i] !== "number" || isNaN(arr[i])) {
+            return "input invalid";
+        }
+    }
     let bigArr = [];
     let smallArr = [];
     let sumOne = 0;
@@ -31,7 +36,7 @@ function monthlySavings(arr , livingCost) {
     }
     return totalSavings;
     }
-    const payment = [ 900 , 2700 , 3400] ;
+    const payment = [ 1000 , 2000 , 2500] ;
     const cost = 5000;
     const result = monthlySavings(payment , cost);
     console.log(result);  
